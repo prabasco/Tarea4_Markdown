@@ -24,22 +24,7 @@ markdown_extensions:
 
 plugins:
   - search
-  - print-site:
-      add_to_navigation: false
-      print_page_title: Print Site
-      print_page_basename: print_page
-      add_print_site_banner: false
-      add_table_of_contents: true
-      toc_title: Table of Contents
-      toc_depth: 6
-      add_full_urls: false
-      enumerate_headings: true
-      enumerate_figures: true
-      add_cover_page: true
-      cover_page_template: ""
-      path_to_pdf: ""
-      include_css: true
-      enabled: true
+  - page-to-pdf
 
 theme:
   name: material
