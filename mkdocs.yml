@@ -24,8 +24,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - pdf-export:
-      combined: true
   - print-site:
       add_to_navigation: false
       print_page_title: Print Site
@@ -60,8 +58,8 @@ theme:
     - scheme: default
       toggle:
         icon: material/brightness-7
-        name: Canvia a modo oscuro
+        name: Cambia a modo oscuro
     - scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Canvia a modo claro
+        name: Cambia a modo claro
