@@ -442,23 +442,26 @@
 <h1 id="tema1-apartado-2">TEMA1 - Apartado 2</h1>
 <h1 id="diagrama-de-clases">Diagrama de clases</h1>
 <pre class="mermaid"><code>classDiagram
-Person &lt;|-- Student
-Person &lt;|-- Professor
-Person : +String name
-Person : +String phoneNumber
-Person : +String emailAddress
-Person: +purchaseParkingPass()
-Address "1" &lt;-- "0..1" Person:lives at
-class Student{
+
+class Person {
+    +String name
+    +String phoneNumber
+    +String emailAddress
+    +purchaseParkingPass()
+}
+
+class Student {
     +int studentNumber
     +int averageMark
     +isEligibleToEnrol()
     +getSeminarsTaken()
 }
-class Professor{
+
+class Professor {
     +int salary
 }
-class Address{
+
+class Address {
     +String street
     +String city
     +String state
@@ -466,7 +469,12 @@ class Address{
     +String country
     -validate()
     +outputAsLabel()
-}</code></pre>
+}
+
+Person &lt;|-- Student
+Person &lt;|-- Professor
+
+Address "1" &lt;-- "0..1" Person : lives at</code></pre>
 <h1 id="7-enlaces">7. Enlaces</h1>
 <p>Se crean con el texto entre corchetes y la URL entre paréntesis</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
