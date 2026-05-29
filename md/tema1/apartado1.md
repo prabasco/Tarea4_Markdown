@@ -73,6 +73,7 @@ Pero ahora salto de línea.
     ??? question "Ver la respuesta"
 
         2
+        
 
 **Resultado**:
 
