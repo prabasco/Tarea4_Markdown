@@ -13,12 +13,63 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences:
+    custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+
+extra_templates:
+  - docs/index.html
+
+plugins:
+  - search
+  - pdf-export:
+        combined: true
+  - print-site:
+      add_to_navigation: false
+      print_page_title: 'Print Site'
+      print_page_basename: 'print_page'
+      add_print_site_banner: false
+      # Table of contents
+      add_table_of_contents: true
+      toc_title: 'Table of Contents'
+      toc_depth: 6
+      # Content-related
+      add_full_urls: false
+      enumerate_headings: true
+      enumerate_figures: true
+      add_cover_page: true
+      cover_page_template: ""
+      path_to_pdf: ""
+      include_css: true
+      enabled: true
 
 theme:
   name: 'material'
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+  icon:
+    repo: 'fontawesome/brands/github'
   logo: 'img/logoMarkdown.png'
   favicon: 'img/logoMarkdown.png'
+  font:
+    text: 'Roboto, sans-serif'
+    code: 'Console, Courier New, monospace'
   palette:
-    primary: 'white'
+      - scheme: default
+      toggle:
+          icon: material/brightness-7 
+          name: Canvia a modo oscuro
+
+      - scheme: slate
+      toggle:
+          icon: material/brightness-4
+          name: Canvia a modo claro
 
 
