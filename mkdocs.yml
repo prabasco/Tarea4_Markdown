@@ -1,13 +1,13 @@
 site_name: Curso CEFIRE Markdown - Pablo Rabasco
-docs_dir: "md"
-site_dir: "docs"
+docs_dir: md
+site_dir: docs
 
 nav:
-    - Inicio: index.md
-    - Tema 1:
+  - Inicio: index.md
+  - Tema 1:
       - Apartado 1: tema1/apartado1.md
       - Apartado 2: tema1/apartado2.md
-    - About: about.md
+  - About: about.md
 
 markdown_extensions:
   - admonition
@@ -16,29 +16,24 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
   - pymdownx.superfences:
-    custom_fences:
-      - name: mermaid
-        class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_code_format
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.snippets
-
-extra_templates:
-  - docs/index.html
 
 plugins:
   - search
   - pdf-export:
-        combined: true
+      combined: true
   - print-site:
       add_to_navigation: false
-      print_page_title: 'Print Site'
-      print_page_basename: 'print_page'
+      print_page_title: Print Site
+      print_page_basename: print_page
       add_print_site_banner: false
-      # Table of contents
       add_table_of_contents: true
-      toc_title: 'Table of Contents'
+      toc_title: Table of Contents
       toc_depth: 6
-      # Content-related
       add_full_urls: false
       enumerate_headings: true
       enumerate_figures: true
@@ -49,27 +44,24 @@ plugins:
       enabled: true
 
 theme:
-  name: 'material'
+  name: material
   features:
     - navigation.sections
     - navigation.top
     - content.code.copy
   icon:
-    repo: 'fontawesome/brands/github'
-  logo: 'img/logoMarkdown.png'
-  favicon: 'img/logoMarkdown.png'
+    repo: fontawesome/brands/github
+  logo: img/logoMarkdown.png
+  favicon: img/logoMarkdown.png
   font:
-    text: 'Roboto, sans-serif'
-    code: 'Console, Courier New, monospace'
+    text: Roboto
+    code: Roboto Mono
   palette:
-      - scheme: default
+    - scheme: default
       toggle:
-          icon: material/brightness-7 
-          name: Canvia a modo oscuro
-
-      - scheme: slate
+        icon: material/brightness-7
+        name: Canvia a modo oscuro
+    - scheme: slate
       toggle:
-          icon: material/brightness-4
-          name: Canvia a modo claro
-
-
+        icon: material/brightness-4
+        name: Canvia a modo claro
