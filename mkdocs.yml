@@ -27,10 +27,7 @@ plugins:
   - print-site:
       add_to_navigation: false
       enabled: true
-  - page-to-pdf:
-      enabled: true
-      output_path: pdf
-      toc_level: 2
+  - page-to-pdf
 
 theme:
   name: material
