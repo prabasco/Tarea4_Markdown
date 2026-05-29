@@ -69,11 +69,12 @@ Pero ahora salto de línea.
 ```text
 ???+ note "Pregunta"
 
-    ¿Cuantos espacios de debo poner al final de la línea anterior si quiero que haya salto, pero sin línea en blanco?
+    ¿Cuantos espacios debo poner al final de la línea anterior si quiero que haya salto, pero sin línea en blanco?
 
     ??? question "Ver la respuesta"
 
-        2 espacios
+        2
+        
 ```
 
 **Resultado**:
