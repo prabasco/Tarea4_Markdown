@@ -2,33 +2,34 @@
 
 # Diagrama de clases
 
+
 ```mermaid
 classDiagram
 
 class Person {
-    +String name
-    +String phoneNumber
-    +String emailAddress
+    +name : String
+    +phoneNumber : String
+    +emailAddress : String
     +purchaseParkingPass()
 }
 
 class Student {
-    +int studentNumber
-    +int averageMark
+    +studentNumber : int
+    +averageMark : int
     +isEligibleToEnrol()
     +getSeminarsTaken()
 }
 
 class Professor {
-    +int salary
+    +salary : int
 }
 
 class Address {
-    +String street
-    +String city
-    +String state
-    +int postalCode
-    +String country
+    +street : String
+    +city : String
+    +state : String
+    +postalCode : int
+    +country : String
     -validate()
     +outputAsLabel()
 }
@@ -36,8 +37,9 @@ class Address {
 Person <|-- Student
 Person <|-- Professor
 
-Address "1" <-- "0..1" Person : lives at
+Person "0..1" --> "1" Address : lives at
 ```
+
 
 # 7. Enlaces
 
