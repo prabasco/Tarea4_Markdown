@@ -66,7 +66,6 @@ Esto es el cuarto párrafo.
 Pero ahora salto de línea.
 ```
 
-```text
 ???+ note "Pregunta"
 
     ¿Cuantos espacios debo poner al final de la línea anterior si quiero que haya salto, pero sin línea en blanco?
@@ -74,7 +73,6 @@ Pero ahora salto de línea.
     ??? question "Ver la respuesta"
 
         2
-```
 
 **Resultado**:
 
