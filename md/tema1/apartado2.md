@@ -2,6 +2,7 @@
 
 # Diagrama de clases
 
+``` mermaid
 classDiagram
 Person <|-- Student
 Person <|-- Professor
@@ -28,6 +29,7 @@ class Address{
     -validate()
     +outputAsLabel()
 }
+```
 
 # 7. Enlaces
 
