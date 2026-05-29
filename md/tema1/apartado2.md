@@ -136,6 +136,8 @@ Se crean con `>`.
 > 
 > La cita principal llegaría hasta aquí. 
 
+---
+
 # 10. Bloques de texto
 
 Si quieres crear un bloque entero que contenga código. Lo único que tienes que hacer es encerrar dicho párrafo entre dos líneas formadas por tres \~ virgulillas (Alt + 126 en el teclado numérico).
@@ -381,5 +383,3 @@ You can also use words, to fit your writing style more closely[^note].
 [^note]:
     Named footnotes will still render with numbers instead of the text but allow easier identification and linking.  
     This footnote also has been made with a different syntax using 4 spaces for new lines.
-
-

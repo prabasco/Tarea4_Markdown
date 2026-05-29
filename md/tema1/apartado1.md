@@ -23,6 +23,10 @@ Cabecera nivel 2 (Usando -)
 -----
 ```
 
+!!! note ""
+
+    Aunque se puede usar = para Cabeceras nivel 1 y - para Cabeceras nivel 2, es mejor usar # y ## respectivamente.
+
 **Resultado**:
 
 # Cabecera nivel 1
