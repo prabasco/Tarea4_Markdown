@@ -24,7 +24,13 @@ markdown_extensions:
 
 plugins:
   - search
-  - page-to-pdf
+  - print-site:
+      add_to_navigation: false
+      enabled: true
+  - page-to-pdf:
+      enabled: true
+      output_path: pdf
+      toc_level: 2
 
 theme:
   name: material
