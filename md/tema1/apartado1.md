@@ -72,8 +72,8 @@ Pero ahora salto de línea.
 
     ??? question "Ver la respuesta"
 
-        2
-        
+        2 espacios
+
 
 **Resultado**:
 

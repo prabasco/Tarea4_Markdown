@@ -1,5 +1,34 @@
 # TEMA1 - Apartado 2
 
+# Diagrama de clases
+
+classDiagram
+Person <|-- Student
+Person <|-- Professor
+Person : +String name
+Person : +String phoneNumber
+Person : +String emailAddress
+Person: +purchaseParkingPass()
+Address "1" <-- "0..1" Person:lives at
+class Student{
+    +int studentNumber
+    +int averageMark
+    +isEligibleToEnrol()
+    +getSeminarsTaken()
+}
+class Professor{
+    +int salary
+}
+class Address{
+    +String street
+    +String city
+    +String state
+    +int postalCode
+    +String country
+    -validate()
+    +outputAsLabel()
+}
+
 # 7. Enlaces
 
 Se crean con el texto entre corchetes y la URL entre paréntesis
